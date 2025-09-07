@@ -1,5 +1,6 @@
 import React from 'react';
 import './Header.css';
+import CameraIcon from './CameraIcon';
 
 const Header = ({ title, showBack, onBack }) => {
   return (
@@ -12,10 +13,13 @@ const Header = ({ title, showBack, onBack }) => {
             </svg>
           </button>
         )}
-        <h1 className="header-title">{title}</h1>
+        <div className="header-title-container">
+          <h1 className="header-title">{title}</h1>
+          <p className="header-subtitle">from Fuji Weekly Recipes</p>
+        </div>
         {!showBack && (
           <div className="header-logo">
-            <img src="/logo.png" alt="FujiX" onError={(e) => e.target.style.display = 'none'} />
+            <span className="fuji-text">Fujifilm</span>
           </div>
         )}
       </div>

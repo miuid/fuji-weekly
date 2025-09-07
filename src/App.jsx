@@ -71,7 +71,7 @@ function App() {
   return (
     <div className="app">
       <Header
-        title="FujiX Weekly"
+        title="Fuji Camera Recipes"
         showBack={currentView === 'detail'}
         onBack={handleBackToList}
       />
