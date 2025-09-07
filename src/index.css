@@ -1,0 +1,84 @@
+/* Reset and base styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  color: #384268;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'PingFangSC-Regular', 'Noto Sans TC', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  background-color: #f8f8f8;
+  line-height: 1.5;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+a {
+  color: #007aff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Utility classes */
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.full {
+  width: 100%;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+/* Element spacing */
+.stgap > *:not(:first-child) {
+  margin-top: 5px;
+}
+
+.stgap1 > *:not(:first-child) {
+  margin-top: 10px;
+}
+
+.stgap2 > *:not(:first-child) {
+  margin-top: 20px;
+}
+
+.stgap3 > *:not(:first-child) {
+  margin-top: 30px;
+}
+
+/* Flex utilities */
+.flex {
+  display: flex;
+}
+
+.row {
+  display: flex;
+  flex-direction: row !important;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+.row-rev {
+  display: flex;
+  flex-direction: row-reverse;
+}
